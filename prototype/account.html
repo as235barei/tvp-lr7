@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your TechShop account: profile details and order history.">
+  <title>My Account — TechShop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-account">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop</h1></a>
+        <p class="tagline">Electronics &amp; Gadgets Store</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>My Account</li>
+      </ul>
+    </nav>
+
+    <h2>My account</h2>
+
+    <section aria-labelledby="profile-heading">
+      <h3 id="profile-heading">Profile</h3>
+      <table>
+        <caption>Account details</caption>
+        <tbody>
+          <tr><th scope="row">Full name</th><td>Andrii Kovalenko</td></tr>
+          <tr><th scope="row">Email</th><td>andrii.kovalenko@example.com</td></tr>
+          <tr><th scope="row">Phone</th><td>+380 (50) 123-45-67</td></tr>
+          <tr><th scope="row">Member since</th><td>2025-09-01</td></tr>
+          <tr><th scope="row">Default address</th><td>12 Deribasivska St., Odesa, Ukraine</td></tr>
+        </tbody>
+      </table>
+      <p>
+        <a href="#">Edit profile</a> |
+        <a href="#">Change password</a> |
+        <a href="login.html">Log out</a>
+      </p>
+    </section>
+
+    <section aria-labelledby="orders-heading">
+      <h3 id="orders-heading">Order history</h3>
+      <table>
+        <caption>Your previous orders</caption>
+        <thead>
+          <tr>
+            <th scope="col">Order #</th>
+            <th scope="col">Date</th>
+            <th scope="col">Items</th>
+            <th scope="col">Total</th>
+            <th scope="col">Status</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#10428</td>
+            <td>2026-06-10</td>
+            <td>iPhone 15 Pro, AirPods Pro 2</td>
+            <td>$1348.00</td>
+            <td><span class="badge badge-delivered">Delivered</span></td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>#10319</td>
+            <td>2026-04-22</td>
+            <td>MacBook Air M3</td>
+            <td>$1199.00</td>
+            <td><span class="badge badge-delivered">Delivered</span></td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>#10277</td>
+            <td>2026-03-15</td>
+            <td>Sony WH-1000XM5</td>
+            <td>$399.00</td>
+            <td><span class="badge badge-shipped">Shipped</span></td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>#10198</td>
+            <td>2026-02-02</td>
+            <td>Apple Watch Series 9, Anker Charger</td>
+            <td>$478.00</td>
+            <td><span class="badge badge-cancelled">Cancelled</span></td>
+            <td><a href="#">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside aria-labelledby="account-nav-heading">
+      <h3 id="account-nav-heading">Account menu</h3>
+      <ul>
+        <li><a href="#">Edit profile</a></li>
+        <li><a href="#">Saved addresses</a></li>
+        <li><a href="#">Payment methods</a></li>
+        <li><a href="#">My reviews</a></li>
+        <li><a href="login.html">Log out</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop. All rights reserved.</p>
+    <address>Contact: support@techshop.example &middot; +1 (555) 010-2026 &middot; Odesa, Ukraine</address>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechShop administration dashboard: key statistics and latest orders.">
+  <title>Dashboard — TechShop Admin</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin">
+  <header class="admin-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop Admin</h1></a>
+        <p class="tagline">Administration panel</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-shell container">
+    <aside class="admin-sidebar">
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="../login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+    <h2>Dashboard</h2>
+
+    <section class="stats" aria-labelledby="stats-heading">
+      <h3 id="stats-heading">Overview statistics</h3>
+
+      <article>
+        <h4>Total products</h4>
+        <p>248</p>
+      </article>
+
+      <article>
+        <h4>Total orders</h4>
+        <p>1 372</p>
+      </article>
+
+      <article>
+        <h4>Registered users</h4>
+        <p>5 814</p>
+      </article>
+
+      <article>
+        <h4>Revenue (this month)</h4>
+        <p>$184 920.00</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="recent-orders-heading">
+      <h3 id="recent-orders-heading">Latest orders</h3>
+      <table>
+        <caption>Most recent customer orders</caption>
+        <thead>
+          <tr>
+            <th scope="col">Order #</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Date</th>
+            <th scope="col">Total</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#10428</td>
+            <td>Andrii Kovalenko</td>
+            <td>2026-06-27</td>
+            <td>$1348.00</td>
+            <td><span class="badge badge-processing">Processing</span></td>
+            <td><a href="orders.html">View</a></td>
+          </tr>
+          <tr>
+            <td>#10427</td>
+            <td>Maria Shevchenko</td>
+            <td>2026-06-27</td>
+            <td>$799.00</td>
+            <td><span class="badge badge-paid">Paid</span></td>
+            <td><a href="orders.html">View</a></td>
+          </tr>
+          <tr>
+            <td>#10426</td>
+            <td>John Doe</td>
+            <td>2026-06-26</td>
+            <td>$1599.00</td>
+            <td><span class="badge badge-shipped">Shipped</span></td>
+            <td><a href="orders.html">View</a></td>
+          </tr>
+          <tr>
+            <td>#10425</td>
+            <td>Olena Tkachenko</td>
+            <td>2026-06-26</td>
+            <td>$249.00</td>
+            <td><span class="badge badge-delivered">Delivered</span></td>
+            <td><a href="orders.html">View</a></td>
+          </tr>
+          <tr>
+            <td>#10424</td>
+            <td>Petro Bondarenko</td>
+            <td>2026-06-25</td>
+            <td>$429.00</td>
+            <td><span class="badge badge-cancelled">Cancelled</span></td>
+            <td><a href="orders.html">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  </div>
+
+  <footer class="admin-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Admin footer navigation">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="../index.html">Back to store</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop Admin Panel.</p>
+    </div>
+  </footer>
+</body>
+</html>

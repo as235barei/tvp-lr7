@@ -1,0 +1,39 @@
+# Node
+node_modules/
+dist/
+build/
+.vite/
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.local
+server/.env
+client/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# JMeter raw output (keep .jmx and final report)
+load-testing/results/*.jtl
+load-testing/results/*.log
+
+# Tools
+diagrams/plantuml.jar
+.vercel
+.env*
+
+# ...але приклади конфігів тримаємо у репозиторії
+!.env.example
+!**/.env.example
+
+# Скріншоти/збірки бекенду
+server/node_modules/

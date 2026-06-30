@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the full TechShop catalog of smartphones, laptops, headphones, smartwatches and accessories with filters and sorting.">
+  <title>Catalog — TechShop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-catalog">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop</h1></a>
+        <p class="tagline">Electronics &amp; Gadgets Store</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    <form class="search-form" action="#" method="get" role="search">
+      <label for="site-search">Search products</label>
+      <input type="search" id="site-search" name="q" placeholder="Search for products...">
+      <button type="submit">Search</button>
+    </form>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Catalog</li>
+      </ul>
+    </nav>
+
+    <h2>Product catalog</h2>
+
+    <aside class="filters" aria-labelledby="filters-heading">
+      <h3 id="filters-heading">Filters</h3>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Category</legend>
+          <label><input type="checkbox" name="category" value="smartphones"> Smartphones</label>
+          <label><input type="checkbox" name="category" value="laptops"> Laptops</label>
+          <label><input type="checkbox" name="category" value="headphones"> Headphones</label>
+          <label><input type="checkbox" name="category" value="smartwatches"> Smartwatches</label>
+          <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Price range (USD)</legend>
+          <label for="price-min">Min</label>
+          <input type="number" id="price-min" name="price_min" min="0" step="1" value="0">
+          <label for="price-max">Max</label>
+          <input type="number" id="price-max" name="price_max" min="0" step="1" value="2000">
+        </fieldset>
+
+        <fieldset>
+          <legend>Brand</legend>
+          <label><input type="checkbox" name="brand" value="apple"> Apple</label>
+          <label><input type="checkbox" name="brand" value="samsung"> Samsung</label>
+          <label><input type="checkbox" name="brand" value="sony"> Sony</label>
+          <label><input type="checkbox" name="brand" value="dell"> Dell</label>
+          <label><input type="checkbox" name="brand" value="anker"> Anker</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sort by</legend>
+          <label for="sort">Order</label>
+          <select id="sort" name="sort">
+            <option value="popular">Popularity</option>
+            <option value="price_asc">Price: low to high</option>
+            <option value="price_desc">Price: high to low</option>
+            <option value="newest">Newest first</option>
+            <option value="rating">Customer rating</option>
+          </select>
+        </fieldset>
+
+        <button type="submit">Apply filters</button>
+        <button type="reset">Reset</button>
+      </form>
+    </aside>
+
+    <section class="results product-grid" aria-labelledby="results-heading">
+      <h3 id="results-heading">Products (12 of 48)</h3>
+
+      <article>
+        <img src="assets/placeholder.png" alt="iPhone 15 Pro smartphone">
+        <h4>iPhone 15 Pro</h4>
+        <p>Smartphone &middot; Apple &middot; A17 Pro &middot; 256&nbsp;GB</p>
+        <p class="price">Price: $1099.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Samsung Galaxy S24 smartphone">
+        <h4>Samsung Galaxy S24</h4>
+        <p>Smartphone &middot; Samsung &middot; Snapdragon 8 Gen 3 &middot; 128&nbsp;GB</p>
+        <p class="price">Price: $799.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Google Pixel 8 smartphone">
+        <h4>Google Pixel 8</h4>
+        <p>Smartphone &middot; Google &middot; Tensor G3 &middot; 128&nbsp;GB</p>
+        <p class="price">Price: $699.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="MacBook Air M3 laptop">
+        <h4>MacBook Air M3</h4>
+        <p>Laptop &middot; Apple &middot; M3 &middot; 8&nbsp;GB / 256&nbsp;GB</p>
+        <p class="price">Price: $1199.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Dell XPS 13 laptop">
+        <h4>Dell XPS 13</h4>
+        <p>Laptop &middot; Dell &middot; Intel Core i7 &middot; 16&nbsp;GB / 512&nbsp;GB</p>
+        <p class="price">Price: $1299.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="ASUS ROG Zephyrus gaming laptop">
+        <h4>ASUS ROG Zephyrus G14</h4>
+        <p>Laptop &middot; ASUS &middot; Ryzen 9 &middot; 16&nbsp;GB / 1&nbsp;TB</p>
+        <p class="price">Price: $1599.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Sony WH-1000XM5 headphones">
+        <h4>Sony WH-1000XM5</h4>
+        <p>Headphones &middot; Sony &middot; Wireless &middot; Noise cancelling</p>
+        <p class="price">Price: $399.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Apple AirPods Pro 2 earbuds">
+        <h4>Apple AirPods Pro 2</h4>
+        <p>Headphones &middot; Apple &middot; In-ear &middot; USB-C</p>
+        <p class="price">Price: $249.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Apple Watch Series 9 smartwatch">
+        <h4>Apple Watch Series 9</h4>
+        <p>Smartwatch &middot; Apple &middot; 45&nbsp;mm &middot; GPS</p>
+        <p class="price">Price: $429.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Samsung Galaxy Watch 6 smartwatch">
+        <h4>Samsung Galaxy Watch 6</h4>
+        <p>Smartwatch &middot; Samsung &middot; 44&nbsp;mm &middot; LTE</p>
+        <p class="price">Price: $349.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Anker 65W USB-C charger">
+        <h4>Anker 65W USB-C Charger</h4>
+        <p>Accessory &middot; Anker &middot; GaN &middot; 3 ports</p>
+        <p class="price">Price: $49.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <article>
+        <img src="assets/placeholder.png" alt="Logitech MX Master 3S wireless mouse">
+        <h4>Logitech MX Master 3S</h4>
+        <p>Accessory &middot; Logitech &middot; Wireless mouse &middot; USB-C</p>
+        <p class="price">Price: $99.00</p>
+        <p><a href="product.html">View</a> | <a href="cart.html">Add to cart</a></p>
+      </article>
+
+      <nav class="pagination" aria-label="Pagination">
+        <ul>
+          <li><a href="catalog.html?page=1">Previous</a></li>
+          <li><a href="catalog.html?page=1">1</a></li>
+          <li><a href="catalog.html?page=2">2</a></li>
+          <li><a href="catalog.html?page=3">3</a></li>
+          <li><a href="catalog.html?page=4">4</a></li>
+          <li><a href="catalog.html?page=2">Next</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop. All rights reserved.</p>
+    <address>Contact: support@techshop.example &middot; +1 (555) 010-2026 &middot; Odesa, Ukraine</address>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+services:
+  db:
+    image: mysql:8
+    container_name: techshop-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: techshop
+      MYSQL_USER: shop
+      MYSQL_PASSWORD: shoppass
+    ports:
+      - "3306:3306"
+    volumes:
+      - techshop_db:/var/lib/mysql
+      - ./database:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-prootpass"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    image: adminer:latest
+    container_name: techshop-adminer
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8081:8080"
+
+volumes:
+  techshop_db:

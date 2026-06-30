@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechShop admin: manage registered users — roles, blocking and deletion.">
+  <title>Manage Users — TechShop Admin</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin">
+  <header class="admin-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop Admin</h1></a>
+        <p class="tagline">Administration panel</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-shell container">
+    <aside class="admin-sidebar">
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="../login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+    <h2>Manage users</h2>
+
+    <section aria-labelledby="users-table-heading">
+      <h3 id="users-table-heading">Registered users</h3>
+      <table>
+        <caption>All registered accounts</caption>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Registered</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Andrii Kovalenko</td>
+            <td>andrii.kovalenko@example.com</td>
+            <td>Customer</td>
+            <td>2025-09-01</td>
+            <td><a href="#">Block</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Maria Shevchenko</td>
+            <td>maria.shevchenko@example.com</td>
+            <td>Customer</td>
+            <td>2025-10-14</td>
+            <td><a href="#">Block</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>Customer</td>
+            <td>2025-11-23</td>
+            <td><a href="#">Block</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Olena Tkachenko</td>
+            <td>olena.tkachenko@example.com</td>
+            <td>Customer</td>
+            <td>2026-01-05</td>
+            <td><a href="#">Block</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Site Administrator</td>
+            <td>admin@techshop.example</td>
+            <td>Admin</td>
+            <td>2025-08-15</td>
+            <td><a href="#">Block</a> | <a href="#">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="role-form-heading">
+      <h3 id="role-form-heading">Change user role</h3>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Role assignment</legend>
+          <label for="user-id">User ID</label>
+          <input type="number" id="user-id" name="user_id" min="1" step="1">
+
+          <label for="user-role">Role</label>
+          <select id="user-role" name="role">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
+
+          <button type="submit">Update role</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  </div>
+
+  <footer class="admin-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Admin footer navigation">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="../index.html">Back to store</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop Admin Panel.</p>
+    </div>
+  </footer>
+</body>
+</html>

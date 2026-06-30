@@ -1,0 +1,60 @@
+@startuml use-case
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+title Use-Case Diagram — TechShop Online Store
+
+actor "Guest" as Guest
+actor "Registered User" as User
+actor "Admin" as Admin
+
+Guest <|-- User
+User <|-- Admin
+
+rectangle "TechShop" {
+  ' --- Guest use cases ---
+  usecase "Browse catalog" as UC_Browse
+  usecase "Search / filter products" as UC_Search
+  usecase "View product" as UC_View
+  usecase "Manage local cart" as UC_Cart
+  usecase "Register" as UC_Register
+
+  ' --- Registered User use cases ---
+  usecase "Login / Logout" as UC_Login
+  usecase "Place order" as UC_Order
+  usecase "View order history" as UC_History
+  usecase "Leave review & rating" as UC_Review
+  usecase "Edit profile" as UC_Profile
+
+  ' --- Admin use cases ---
+  usecase "Manage products (CRUD)" as UC_Products
+  usecase "Manage categories" as UC_Categories
+  usecase "Manage orders (change status)" as UC_Orders
+  usecase "Manage users" as UC_Users
+  usecase "Moderate reviews" as UC_Moderate
+  usecase "View dashboard" as UC_Dashboard
+}
+
+' Guest associations
+Guest --> UC_Browse
+Guest --> UC_Search
+Guest --> UC_View
+Guest --> UC_Cart
+Guest --> UC_Register
+
+' Registered User associations
+User --> UC_Login
+User --> UC_Order
+User --> UC_History
+User --> UC_Review
+User --> UC_Profile
+
+' Admin associations
+Admin --> UC_Products
+Admin --> UC_Categories
+Admin --> UC_Orders
+Admin --> UC_Users
+Admin --> UC_Moderate
+Admin --> UC_Dashboard
+
+@enduml

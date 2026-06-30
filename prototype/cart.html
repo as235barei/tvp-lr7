@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your TechShop shopping cart: review items, update quantities and proceed to checkout.">
+  <title>Shopping Cart — TechShop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-cart">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop</h1></a>
+        <p class="tagline">Electronics &amp; Gadgets Store</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    <form class="search-form" action="#" method="get" role="search">
+      <label for="site-search">Search products</label>
+      <input type="search" id="site-search" name="q" placeholder="Search for products...">
+      <button type="submit">Search</button>
+    </form>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Cart</li>
+      </ul>
+    </nav>
+
+    <h2>Shopping cart</h2>
+
+    <form action="#" method="post">
+      <section class="cart-items" aria-labelledby="cart-items-heading">
+        <h3 id="cart-items-heading">Items in your cart</h3>
+        <table>
+          <caption>Products currently in the cart</caption>
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Product</th>
+              <th scope="col">Unit price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Subtotal</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="assets/placeholder.png" alt="iPhone 15 Pro"></td>
+              <td><a href="product.html">iPhone 15 Pro (256 GB, Natural)</a></td>
+              <td>$1099.00</td>
+              <td>
+                <label for="qty-1">Quantity for iPhone 15 Pro</label>
+                <input type="number" id="qty-1" name="qty_1" min="1" max="10" value="1">
+              </td>
+              <td>$1099.00</td>
+              <td><button type="submit" name="remove" value="1">Remove</button></td>
+            </tr>
+            <tr>
+              <td><img src="assets/placeholder.png" alt="Sony WH-1000XM5 headphones"></td>
+              <td><a href="product.html">Sony WH-1000XM5</a></td>
+              <td>$399.00</td>
+              <td>
+                <label for="qty-2">Quantity for Sony WH-1000XM5</label>
+                <input type="number" id="qty-2" name="qty_2" min="1" max="10" value="2">
+              </td>
+              <td>$798.00</td>
+              <td><button type="submit" name="remove" value="2">Remove</button></td>
+            </tr>
+            <tr>
+              <td><img src="assets/placeholder.png" alt="Anker 65W USB-C charger"></td>
+              <td><a href="product.html">Anker 65W USB-C Charger</a></td>
+              <td>$49.00</td>
+              <td>
+                <label for="qty-3">Quantity for Anker charger</label>
+                <input type="number" id="qty-3" name="qty_3" min="1" max="10" value="1">
+              </td>
+              <td>$49.00</td>
+              <td><button type="submit" name="remove" value="3">Remove</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <button type="submit" name="action" value="update">Update cart</button>
+          <a href="catalog.html">Continue shopping</a>
+        </p>
+      </section>
+
+      <aside class="order-summary" aria-labelledby="summary-heading">
+        <h3 id="summary-heading">Order summary</h3>
+        <table>
+          <tbody>
+            <tr><th scope="row">Subtotal</th><td>$1946.00</td></tr>
+            <tr><th scope="row">Shipping</th><td>Free</td></tr>
+            <tr><th scope="row">Tax (estimated)</th><td>$155.68</td></tr>
+            <tr><th scope="row">Total</th><td><strong>$2101.68</strong></td></tr>
+          </tbody>
+        </table>
+        <p><a href="checkout.html">Proceed to checkout</a></p>
+      </aside>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop. All rights reserved.</p>
+    <address>Contact: support@techshop.example &middot; +1 (555) 010-2026 &middot; Odesa, Ukraine</address>
+    </div>
+  </footer>
+</body>
+</html>

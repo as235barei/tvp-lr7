@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create a new TechShop account to shop electronics, save orders and leave product reviews.">
+  <title>Register — TechShop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-auth">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop</h1></a>
+        <p class="tagline">Electronics &amp; Gadgets Store</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Register</li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="register-heading">
+      <h2 id="register-heading">Create an account</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Registration details</legend>
+
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+
+          <label for="confirm">Confirm password</label>
+          <input type="password" id="confirm" name="confirm_password" autocomplete="new-password" minlength="8" required>
+
+          <label><input type="checkbox" name="terms" value="1" required> I agree to the Terms of Service and Privacy Policy</label>
+
+          <button type="submit">Create account</button>
+        </fieldset>
+      </form>
+      <p>Already have an account? <a href="login.html">Sign in here</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="account.html">My Account</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop. All rights reserved.</p>
+    <address>Contact: support@techshop.example &middot; +1 (555) 010-2026 &middot; Odesa, Ukraine</address>
+    </div>
+  </footer>
+</body>
+</html>

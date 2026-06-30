@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechShop admin: moderate customer reviews — approve or delete submitted reviews.">
+  <title>Moderate Reviews — TechShop Admin</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin">
+  <header class="admin-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop Admin</h1></a>
+        <p class="tagline">Administration panel</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-shell container">
+    <aside class="admin-sidebar">
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="../login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+    <h2>Moderate reviews</h2>
+
+    <section aria-labelledby="reviews-table-heading">
+      <h3 id="reviews-table-heading">Pending and published reviews</h3>
+      <table>
+        <caption>Customer reviews awaiting moderation</caption>
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product</th>
+            <th scope="col">Author</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Text</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>iPhone 15 Pro</td>
+            <td>John D.</td>
+            <td>5 / 5</td>
+            <td>Incredibly fast and the titanium build feels premium.</td>
+            <td><a href="#">Approve</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>iPhone 15 Pro</td>
+            <td>Maria S.</td>
+            <td>4 / 5</td>
+            <td>Camera quality is stunning, only the price is high.</td>
+            <td><a href="#">Approve</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Sony WH-1000XM5</td>
+            <td>Petro B.</td>
+            <td>5 / 5</td>
+            <td>Best noise cancelling I have ever tried. Highly recommended.</td>
+            <td><a href="#">Approve</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>MacBook Air M3</td>
+            <td>Olena T.</td>
+            <td>3 / 5</td>
+            <td>Good laptop but only 8 GB RAM feels limiting for the price.</td>
+            <td><a href="#">Approve</a> | <a href="#">Delete</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Anker 65W USB-C Charger</td>
+            <td>Spam Bot</td>
+            <td>1 / 5</td>
+            <td>Visit my site for cheap deals!!! (suspected spam)</td>
+            <td><a href="#">Approve</a> | <a href="#">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  </div>
+
+  <footer class="admin-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Admin footer navigation">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="../index.html">Back to store</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop Admin Panel.</p>
+    </div>
+  </footer>
+</body>
+</html>

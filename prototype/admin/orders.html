@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechShop admin: manage customer orders and update their status.">
+  <title>Manage Orders — TechShop Admin</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin">
+  <header class="admin-header">
+    <div class="container header-inner">
+      <div class="brand-block">
+        <a class="brand" href="index.html"><h1>TechShop Admin</h1></a>
+        <p class="tagline">Administration panel</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="admin-shell container">
+    <aside class="admin-sidebar">
+      <nav class="admin-nav" aria-label="Admin navigation">
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="../login.html">Logout</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+    <h2>Manage orders</h2>
+
+    <section aria-labelledby="orders-filter-heading">
+      <h3 id="orders-filter-heading">Filter orders</h3>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Filters</legend>
+          <label for="filter-status">Status</label>
+          <select id="filter-status" name="status">
+            <option value="all">All</option>
+            <option value="new">New</option>
+            <option value="paid">Paid</option>
+            <option value="processing">Processing</option>
+            <option value="shipped">Shipped</option>
+            <option value="delivered">Delivered</option>
+            <option value="cancelled">Cancelled</option>
+          </select>
+          <label for="filter-from">From</label>
+          <input type="date" id="filter-from" name="from">
+          <label for="filter-to">To</label>
+          <input type="date" id="filter-to" name="to">
+          <button type="submit">Apply</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section aria-labelledby="orders-table-heading">
+      <h3 id="orders-table-heading">Orders</h3>
+      <form action="#" method="post">
+        <table>
+          <caption>All customer orders</caption>
+          <thead>
+            <tr>
+              <th scope="col">Order #</th>
+              <th scope="col">Customer</th>
+              <th scope="col">Date</th>
+              <th scope="col">Total</th>
+              <th scope="col">Status</th>
+              <th scope="col">View</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#10428</td>
+              <td>Andrii Kovalenko</td>
+              <td>2026-06-27</td>
+              <td>$1348.00</td>
+              <td>
+                <label for="status-10428">Status for order 10428</label>
+                <select id="status-10428" name="status_10428">
+                  <option>New</option>
+                  <option>Paid</option>
+                  <option selected>Processing</option>
+                  <option>Shipped</option>
+                  <option>Delivered</option>
+                  <option>Cancelled</option>
+                </select>
+              </td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>#10427</td>
+              <td>Maria Shevchenko</td>
+              <td>2026-06-27</td>
+              <td>$799.00</td>
+              <td>
+                <label for="status-10427">Status for order 10427</label>
+                <select id="status-10427" name="status_10427">
+                  <option>New</option>
+                  <option selected>Paid</option>
+                  <option>Processing</option>
+                  <option>Shipped</option>
+                  <option>Delivered</option>
+                  <option>Cancelled</option>
+                </select>
+              </td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>#10426</td>
+              <td>John Doe</td>
+              <td>2026-06-26</td>
+              <td>$1599.00</td>
+              <td>
+                <label for="status-10426">Status for order 10426</label>
+                <select id="status-10426" name="status_10426">
+                  <option>New</option>
+                  <option>Paid</option>
+                  <option>Processing</option>
+                  <option selected>Shipped</option>
+                  <option>Delivered</option>
+                  <option>Cancelled</option>
+                </select>
+              </td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>#10425</td>
+              <td>Olena Tkachenko</td>
+              <td>2026-06-26</td>
+              <td>$249.00</td>
+              <td>
+                <label for="status-10425">Status for order 10425</label>
+                <select id="status-10425" name="status_10425">
+                  <option>New</option>
+                  <option>Paid</option>
+                  <option>Processing</option>
+                  <option>Shipped</option>
+                  <option selected>Delivered</option>
+                  <option>Cancelled</option>
+                </select>
+              </td>
+              <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>#10424</td>
+              <td>Petro Bondarenko</td>
+              <td>2026-06-25</td>
+              <td>$429.00</td>
+              <td>
+                <label for="status-10424">Status for order 10424</label>
+                <select id="status-10424" name="status_10424">
+                  <option>New</option>
+                  <option>Paid</option>
+                  <option>Processing</option>
+                  <option>Shipped</option>
+                  <option>Delivered</option>
+                  <option selected>Cancelled</option>
+                </select>
+              </td>
+              <td><a href="#">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit">Update statuses</button>
+      </form>
+    </section>
+  </main>
+  </div>
+
+  <footer class="admin-footer">
+    <div class="container footer-grid">
+    <nav class="footer-nav" aria-label="Admin footer navigation">
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="users.html">Users</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="../index.html">Back to store</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 TechShop Admin Panel.</p>
+    </div>
+  </footer>
+</body>
+</html>
